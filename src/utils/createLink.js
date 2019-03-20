@@ -102,7 +102,7 @@ const activeLinkCss = {
 const activeLinkBefore = {
   width: 4,
   height: 25,
-  borderLeft: `4px solid ${colors.brand}`,
+  borderLeft: `6px solid ${colors.darker}`,
   paddingLeft: 16,
   position: 'absolute',
   left: 0,
