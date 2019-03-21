@@ -1,5 +1,5 @@
 const puppeteer = require('puppeteer');
-const {percySnapshot} = require('@percy/puppeteer');
+const { percySnapshot } = require('@percy/puppeteer');
 
 const ROOT_URL = `http://0.0.0.0:8001`;
 const pages = [
@@ -10,6 +10,22 @@ const pages = [
   {
     title: 'Docs - Getting started',
     path: 'docs/getting-started.html',
+  },
+  {
+    title: 'Docs - Add React to a Website',
+    path: 'docs/add-react-to-a-website.html',
+  },
+  {
+    title: 'Docs - Create a New React App',
+    path: 'docs/create-a-new-react-app.html',
+  },
+  {
+    title: 'Docs - Hello World',
+    path: 'docs/hello-world.html',
+  },
+  {
+    title: 'Docs - Introducing JSX',
+    path: 'docs/introducing-jsx.html',
   },
   {
     title: 'Tutorial - Intro to React',
