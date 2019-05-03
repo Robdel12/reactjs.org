@@ -45,8 +45,11 @@ jobs:
     steps:
       - *attach_workspace
       - run:
+          name: Build
+          command: yarn build
+      - run:
           name: Visual Regression
-          command: yarn visual-regression
+          command: npx percy snapshot public
 workflows:
   version: 2.1
   default:

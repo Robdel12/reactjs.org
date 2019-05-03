@@ -85,12 +85,11 @@
     "nit:examples": "prettier --config examples/.prettierrc --list-different \"examples/**/*.js\"",
     "prettier": "yarn format:source && yarn format:examples",
     "prettier:diff": "yarn nit:source && yarn nit:examples",
-    "reset": "rimraf ./.cache",
-    "visual-regression": "yarn build && percy exec -- node run-tests.js"
+    "reset": "rimraf ./.cache"
   },
   "devDependencies": {
     "@babel/preset-flow": "^7.0.0",
-    "@percy/puppeteer": "^1.0.5",
+    "@percy/agent": "^0.4.0",
     "eslint-config-prettier": "^2.6.0",
     "http-server": "^0.11.1",
     "lz-string": "^1.4.4",
